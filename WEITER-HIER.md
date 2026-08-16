@@ -12,7 +12,18 @@ Der Nutzer vermietet Ferienwohnungen aktuell über Airbnb und Booking.com, geste
 über die Gäste direkt buchen können — spart die Plattform-Provision. Wichtigste Anforderung:
 keine Doppelbuchungen zwischen der eigenen Website und Airbnb/Booking.com.
 
+## Stand (2026-08-16)
+Git-Sicherheitsnetz steht (Repo eingerichtet, erster Commit gemacht). Projekt in drei Etappen
+zerlegt, weil es zu groß für eine Sitzung ist:
+1. Die Website selbst (Infos, Fotos, Beschreibung) — noch keine Buchungsfunktion.
+2. Verfügbarkeitskalender (zeigt live, was über Airbnb/Booking.com schon belegt ist).
+3. Echte Buchungsfunktion inkl. Rückmeldung an Smoobu (der technisch anspruchsvollste Teil,
+   entscheidend gegen Doppelbuchungen).
+
+Empfehlung war, mit Etappe 1 (reine Info-Website) zu starten. Der Nutzer hat sich dazu noch
+nicht entschieden — Frage steht offen.
+
 ## Nächster Schritt
-Noch offen: gemeinsam einen Plan für das Projekt erstellen (das hat der Nutzer explizit als
-ersten Schritt gewünscht, vor jeder Umsetzung). Das Projekt ist größer als eine Sitzung — der
-Plan sollte es in kleine, machbare Etappen zerlegen, beginnend mit einem greifbaren ersten Stück.
+Entscheiden: mit Etappe 1 (Info-Website, empfohlen) oder mit Etappe 2/3 (Kalender/Buchung)
+anfangen? Danach für die gewählte Etappe die Detailfragen klären und ein Konzept (Design)
+erstellen, bevor es an die Umsetzung geht.
