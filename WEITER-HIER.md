@@ -12,18 +12,25 @@ Der Nutzer vermietet Ferienwohnungen aktuell über Airbnb und Booking.com, geste
 über die Gäste direkt buchen können — spart die Plattform-Provision. Wichtigste Anforderung:
 keine Doppelbuchungen zwischen der eigenen Website und Airbnb/Booking.com.
 
-## Stand (2026-08-16)
-Git-Sicherheitsnetz steht (Repo eingerichtet, erster Commit gemacht). Projekt in drei Etappen
-zerlegt, weil es zu groß für eine Sitzung ist:
+## Stand (2026-08-18)
+Git-Sicherheitsnetz steht. Projekt in drei Etappen zerlegt, weil es zu groß für eine Sitzung ist:
 1. Die Website selbst (Infos, Fotos, Beschreibung) — noch keine Buchungsfunktion.
 2. Verfügbarkeitskalender (zeigt live, was über Airbnb/Booking.com schon belegt ist).
 3. Echte Buchungsfunktion inkl. Rückmeldung an Smoobu (der technisch anspruchsvollste Teil,
    entscheidend gegen Doppelbuchungen).
 
-Empfehlung war, mit Etappe 1 (reine Info-Website) zu starten. Der Nutzer hat sich dazu noch
-nicht entschieden — Frage steht offen.
+**Etappe 1 ist gestartet und ein erster funktionsfähiger Stand steht:**
+- `index.html` + `style.css` — einseitige Info-Website ("Oldenburger Dachperle", warmer/
+  gemütlicher Stil), Inhalte aus dem bestehenden Airbnb-Inserat übernommen (Beschreibung,
+  Ausstattung, Schlafmöglichkeiten, Lage, eine Gästestimme). Kontaktbereich verlinkt vorerst
+  auf Airbnb, da die echte Buchungsfunktion erst in Etappe 3 kommt.
+- `impressum.html` — Pflichtangaben (Quartier 261 / Konstantin Kisner) sind eingetragen.
+- `material/` — Ablage für Ausgangsmaterial (z. B. Fotos aus dem Airbnb-Konto).
+- `bilder/` — noch leer; hier kommen die echten Fotos rein, sobald der Nutzer sie aus seinem
+  Airbnb-Gastgeber-Konto heruntergeladen hat.
+- Lokale Vorschau läuft über `.claude/launch.json` (Server-Name "website-vorschau").
 
 ## Nächster Schritt
-Entscheiden: mit Etappe 1 (Info-Website, empfohlen) oder mit Etappe 2/3 (Kalender/Buchung)
-anfangen? Danach für die gewählte Etappe die Detailfragen klären und ein Konzept (Design)
-erstellen, bevor es an die Umsetzung geht.
+Echte Fotos in `bilder/` einfügen und in `index.html` einbauen (aktuell nur Text, kein Bild).
+Danach ist Etappe 1 inhaltlich fertig und es kann über Veröffentlichung/Hosting gesprochen
+werden — das ist noch offen und kein Teil von Etappe 1/2/3.
