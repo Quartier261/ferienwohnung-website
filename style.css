@@ -1,0 +1,115 @@
+:root {
+  --creme: #faf3e8;
+  --terracotta: #c1652f;
+  --braun-dunkel: #4a3428;
+  --braun-hell: #8a6a52;
+  --weiss: #fffaf3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Verdana, sans-serif;
+  background: var(--creme);
+  color: var(--braun-dunkel);
+  line-height: 1.6;
+}
+
+.hero {
+  background: var(--braun-dunkel);
+  color: var(--weiss);
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+.hero .claim {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--creme);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+main.impressum {
+  padding-top: 3rem;
+}
+
+section {
+  background: var(--weiss);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(74, 52, 40, 0.08);
+}
+
+h2 {
+  color: var(--terracotta);
+  margin-top: 0;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1.5rem;
+}
+
+.feature-list li::before {
+  content: "✓ ";
+  color: var(--terracotta);
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  border-left: 4px solid var(--terracotta);
+  padding-left: 1rem;
+}
+
+.stars {
+  color: var(--terracotta);
+  margin-left: 0.5rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background: var(--terracotta);
+  color: var(--weiss);
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.button:hover {
+  background: var(--braun-hell);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--braun-hell);
+}
+
+footer a {
+  color: var(--braun-hell);
+}
