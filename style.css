@@ -19,21 +19,53 @@ body {
 }
 
 .hero {
-  background: var(--braun-dunkel);
+  background-color: var(--braun-dunkel);
+  background-size: cover;
+  background-position: center;
   color: var(--weiss);
   text-align: center;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.hero .logo {
+  max-width: 220px;
+  width: 60%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
 }
 
 .hero h1 {
   margin: 0 0 0.5rem;
   font-size: 2.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero .claim {
   margin: 0;
   font-size: 1.2rem;
   color: var(--creme);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.galerie img,
+.section-bild {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.section-bild {
+  height: 220px;
+  margin-bottom: 1.25rem;
 }
 
 main {
