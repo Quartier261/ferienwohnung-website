@@ -13,20 +13,23 @@ Der Nutzer vermietet Ferienwohnungen aktuell über Airbnb und Booking.com, geste
 keine Doppelbuchungen zwischen der eigenen Website und Airbnb/Booking.com.
 
 ## Stand (2026-08-19)
-Git-Sicherheitsnetz steht. Projekt in drei Etappen zerlegt, weil es zu groß für eine Sitzung ist:
-1. Die Website selbst (Infos, Fotos, Beschreibung) — noch keine Buchungsfunktion.
+Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
+1. Die Website selbst (Infos, Fotos, Beschreibung).
 2. Verfügbarkeitskalender (zeigt live, was über Airbnb/Booking.com schon belegt ist).
-3. Echte Buchungsfunktion inkl. Rückmeldung an Smoobu (der technisch anspruchsvollste Teil,
-   entscheidend gegen Doppelbuchungen).
+3. Echte Buchungsfunktion inkl. Rückmeldung an Smoobu (entscheidend gegen Doppelbuchungen).
 
-**Etappe 1 ist fertig und live:**
+**Etappe 1 UND 3 sind jetzt live — die Website ist voll funktionsfähig:**
 - **Website ist veröffentlicht:** https://quartier261.github.io/ferienwohnung-website/
   (kostenlos über GitHub Pages, GitHub-Account "Quartier261"). Jede Änderung, die per `git push`
   auf den `master`-Branch hochgeladen wird, aktualisiert die Seite automatisch (dauert 1–2 Min.).
+- **Echte Buchungsfunktion ist eingebaut:** Statt eines selbstgebauten Kalenders (Etappe 2) wird
+  Smoobus eigenes Buchungswidget direkt eingebettet (Smoobu-Dashboard → Kernfunktionen →
+  Buchungssystem → „Website integrieren"). Gäste können direkt auf der Seite Verfügbarkeit
+  prüfen und buchen; Smoobu verhindert dabei selbst Doppelbuchungen über alle Kanäle
+  (Airbnb/Booking.com) — Etappe 2 (eigener Kalender) ist damit hinfällig, das übernimmt Smoobu.
 - `index.html` + `style.css` — einseitige Info-Website ("Oldenburger Dachperle", warmer/
   gemütlicher Stil), Inhalte aus dem bestehenden Airbnb-Inserat übernommen (Beschreibung,
-  Ausstattung, Schlafmöglichkeiten, Lage, eine Gästestimme). Kontaktbereich verlinkt vorerst
-  auf Airbnb, da die echte Buchungsfunktion erst in Etappe 3 kommt.
+  Ausstattung, Schlafmöglichkeiten, Lage, eine Gästestimme, Buchungsbereich).
 - `impressum.html` — Pflichtangaben (Quartier 261 / Konstantin Kisner, Gastgeber Helene &
   Konstantin) sind eingetragen.
 - `bilder/` — echte Fotos der Wohnung sind eingebaut (Titelbild, Küche, Schlafzimmer, Bad,
@@ -41,6 +44,6 @@ Git-Sicherheitsnetz steht. Projekt in drei Etappen zerlegt, weil es zu groß fü
   gekauft und vor die kostenlose GitHub-Adresse geschaltet werden — bisher nicht gemacht.
 
 ## Nächster Schritt
-Etappe 1 ist fertig und veröffentlicht. Als Nächstes entscheiden: eigene Domain
-(quartier261.de) registrieren und einrichten — oder direkt weiter zu Etappe 2
-(Verfügbarkeitskalender).
+Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung). Als Nächstes:
+eigene Domain (quartier261.de) registrieren und einrichten, damit die Seite unter einer
+schöneren Adresse statt der kostenlosen GitHub-Adresse erreichbar ist.
