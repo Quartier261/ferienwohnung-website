@@ -136,6 +136,16 @@ blockquote {
   background: var(--braun-hell);
 }
 
+#apartmentIframeAll {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.alt-buchung {
+  font-size: 0.95rem;
+  color: var(--braun-hell);
+}
+
 footer {
   text-align: center;
   padding: 2rem;
