@@ -19,12 +19,16 @@ Git-Sicherheitsnetz steht. Projekt in drei Etappen zerlegt, weil es zu groß fü
 3. Echte Buchungsfunktion inkl. Rückmeldung an Smoobu (der technisch anspruchsvollste Teil,
    entscheidend gegen Doppelbuchungen).
 
-**Etappe 1 ist inhaltlich fertig:**
+**Etappe 1 ist fertig und live:**
+- **Website ist veröffentlicht:** https://quartier261.github.io/ferienwohnung-website/
+  (kostenlos über GitHub Pages, GitHub-Account "Quartier261"). Jede Änderung, die per `git push`
+  auf den `master`-Branch hochgeladen wird, aktualisiert die Seite automatisch (dauert 1–2 Min.).
 - `index.html` + `style.css` — einseitige Info-Website ("Oldenburger Dachperle", warmer/
   gemütlicher Stil), Inhalte aus dem bestehenden Airbnb-Inserat übernommen (Beschreibung,
   Ausstattung, Schlafmöglichkeiten, Lage, eine Gästestimme). Kontaktbereich verlinkt vorerst
   auf Airbnb, da die echte Buchungsfunktion erst in Etappe 3 kommt.
-- `impressum.html` — Pflichtangaben (Quartier 261 / Konstantin Kisner) sind eingetragen.
+- `impressum.html` — Pflichtangaben (Quartier 261 / Konstantin Kisner, Gastgeber Helene &
+  Konstantin) sind eingetragen.
 - `bilder/` — echte Fotos der Wohnung sind eingebaut (Titelbild, Küche, Schlafzimmer, Bad,
   kleine Galerie), inkl. dem Quartier-261-Logo (`logo-quartier261.png`, aus einem
   Werbe-Flyer-Foto ausgeschnitten) im Kopfbereich. Ein paar weitere Fotos liegen noch
@@ -33,7 +37,10 @@ Git-Sicherheitsnetz steht. Projekt in drei Etappen zerlegt, weil es zu groß fü
 - Lokale Vorschau läuft über `python3 -m http.server 4173` im Projektordner (Aufruf über
   `.claude/launch.json` hatte in dieser Umgebung einen Berechtigungsfehler — Server manuell
   im Hintergrund starten und `http://localhost:4173` öffnen).
+- **Domain quartier261.de ist noch frei** (geprüft, nicht registriert). Kann bei Bedarf später
+  gekauft und vor die kostenlose GitHub-Adresse geschaltet werden — bisher nicht gemacht.
 
 ## Nächster Schritt
-Etappe 1 ist fertig. Als Nächstes entscheiden: Veröffentlichung/Hosting der Seite (noch offen,
-kein Teil von Etappe 1/2/3) — oder direkt weiter zu Etappe 2 (Verfügbarkeitskalender).
+Etappe 1 ist fertig und veröffentlicht. Als Nächstes entscheiden: eigene Domain
+(quartier261.de) registrieren und einrichten — oder direkt weiter zu Etappe 2
+(Verfügbarkeitskalender).
