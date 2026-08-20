@@ -146,6 +146,16 @@ blockquote {
   color: var(--braun-hell);
 }
 
+.individuelle-anfrage {
+  background: var(--creme);
+  border: 1px solid var(--terracotta);
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  margin: 1.5rem auto;
+  max-width: 480px;
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
   padding: 2rem;
