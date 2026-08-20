@@ -150,10 +150,47 @@ blockquote {
   background: var(--creme);
   border: 1px solid var(--terracotta);
   border-radius: 8px;
-  padding: 0.9rem 1.2rem;
+  padding: 1.2rem 1.5rem;
   margin: 1.5rem auto;
   max-width: 480px;
+  text-align: left;
+}
+
+.individuelle-anfrage h3 {
+  margin-top: 0;
+  color: var(--terracotta);
+}
+
+.individuelle-anfrage > p {
   font-weight: bold;
+}
+
+.anfrage-formular {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.anfrage-formular label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.anfrage-formular input,
+.anfrage-formular textarea {
+  font: inherit;
+  padding: 0.6rem;
+  border: 1px solid var(--braun-hell);
+  border-radius: 6px;
+  background: var(--weiss);
+  color: var(--braun-dunkel);
+}
+
+.anfrage-formular button {
+  margin-top: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font: inherit;
 }
 
 footer {
