@@ -29,7 +29,9 @@ Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
   (Airbnb/Booking.com) — Etappe 2 (eigener Kalender) ist damit hinfällig, das übernimmt Smoobu.
 - `index.html` + `style.css` — einseitige Info-Website ("Oldenburger Dachperle", warmer/
   gemütlicher Stil), Inhalte aus dem bestehenden Airbnb-Inserat übernommen (Beschreibung,
-  Ausstattung, Schlafmöglichkeiten, Lage, eine Gästestimme, Buchungsbereich).
+  Ausstattung, Schlafmöglichkeiten, Lage, eine Gästestimme, Buchungsbereich). Im
+  Buchungsbereich zusätzlich: Alternative Links zu Airbnb und Booking.com, sowie Kontakt
+  per E-Mail und WhatsApp (0173 3672361).
 - `impressum.html` — Pflichtangaben (Quartier 261 / Konstantin Kisner, Gastgeber Helene &
   Konstantin) sind eingetragen.
 - `bilder/` — echte Fotos der Wohnung sind eingebaut (Titelbild, Küche, Schlafzimmer, Bad,
