@@ -71,3 +71,10 @@ Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung + Kontak
 eigene Domain). Offen: 1) prüfen, ob das HTTPS-Zertifikat für quartier261.de inzwischen fertig
 ist (und danach „HTTPS erzwingen" aktivieren), 2) das Kontaktformular einmal live testen und
 die FormSubmit-Bestätigungsmail bestätigen.
+
+**Neue Idee für eine künftige Sitzung (noch nicht begonnen):** Ein Rechnungsprogramm, mit dem
+sich Mietern nach ihrem Aufenthalt eine Rechnung ausstellen lässt. Das ist ein eigenständiges,
+größeres Thema (Pflichtangaben auf Rechnungen, ggf. Kleinunternehmer-Status) und braucht einen
+frischen, eigenen Anlauf mit Detailfragen. Erster Schritt dabei: prüfen, ob Smoobu nicht
+bereits eine Rechnungsfunktion mitbringt, bevor etwas Eigenes gebaut wird (gleiches Prinzip wie
+beim Buchungswidget — nicht doppelt bauen, was es schon gibt).
