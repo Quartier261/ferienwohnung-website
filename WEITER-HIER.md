@@ -12,7 +12,7 @@ Der Nutzer vermietet Ferienwohnungen aktuell über Airbnb und Booking.com, geste
 über die Gäste direkt buchen können — spart die Plattform-Provision. Wichtigste Anforderung:
 keine Doppelbuchungen zwischen der eigenen Website und Airbnb/Booking.com.
 
-## Stand (2026-08-19)
+## Stand (2026-08-20)
 Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
 1. Die Website selbst (Infos, Fotos, Beschreibung).
 2. Verfügbarkeitskalender (zeigt live, was über Airbnb/Booking.com schon belegt ist).
@@ -42,8 +42,18 @@ Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
 - Lokale Vorschau läuft über `python3 -m http.server 4173` im Projektordner (Aufruf über
   `.claude/launch.json` hatte in dieser Umgebung einen Berechtigungsfehler — Server manuell
   im Hintergrund starten und `http://localhost:4173` öffnen).
-- **Domain quartier261.de ist noch frei** (geprüft, nicht registriert). Kann bei Bedarf später
-  gekauft und vor die kostenlose GitHub-Adresse geschaltet werden — bisher nicht gemacht.
+- **Eigene Domain quartier261.de ist eingerichtet:** bei INWX registriert (Kundenkonto beim
+  Nutzer), DNS-Einträge zeigen auf GitHub Pages (4× A-Record auf die GitHub-IPs + CNAME für
+  „www"), GitHub kennt die Domain (`CNAME`-Datei im Repo, per `gh api ... PATCH .../pages`
+  gesetzt). **Funktioniert bereits über `http://quartier261.de`** (mobil getestet, funktioniert;
+  am Heimnetz des Nutzers zog die DNS-Änderung zunächst noch nicht, das ist normal/Wartezeit).
+  ⚠️ **Offen:** Das automatische HTTPS-Zertifikat von GitHub für die eigene Domain war am
+  Sitzungsende noch nicht fertig ausgestellt (`https_enforced: false` in der Pages-API, Zertifikat
+  zeigte noch `*.github.io` statt `quartier261.de`) — normalerweise braucht das nur ein paar
+  Stunden. Kurz mit `gh api repos/Quartier261/ferienwohnung-website/pages` prüfen, ob
+  `https_enforced` inzwischen `true` werden kann.
+- **QR-Code für die Domain** liegt in `ergebnisse/qr-code-quartier261.png` (zeigt auf
+  `https://quartier261.de`, erzeugt mit `qrencode`), z. B. zum Ausdrucken für die Wohnung.
 - **Kontaktformular "Individuelle Anfrage"** (Name, E-Mail, Nachricht) im Buchungsbereich, für
   Gäste mit Sonderwünschen (z. B. längere Aufenthalte). Verschickt die Nachricht über den
   kostenlosen Dienst FormSubmit.co direkt an quartier261@gmx.de, ohne dass der Gast eine
@@ -57,7 +67,7 @@ Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
   guter Standardtext, aber keine anwaltlich geprüfte Rechtsberatung.
 
 ## Nächster Schritt
-Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung + Kontaktformular).
-Offen: 1) das Kontaktformular einmal live testen und die FormSubmit-Bestätigungsmail
-bestätigen, 2) eigene Domain (quartier261.de) registrieren und einrichten, damit die Seite
-unter einer schöneren Adresse statt der kostenlosen GitHub-Adresse erreichbar ist.
+Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung + Kontaktformular +
+eigene Domain). Offen: 1) prüfen, ob das HTTPS-Zertifikat für quartier261.de inzwischen fertig
+ist (und danach „HTTPS erzwingen" aktivieren), 2) das Kontaktformular einmal live testen und
+die FormSubmit-Bestätigungsmail bestätigen.
