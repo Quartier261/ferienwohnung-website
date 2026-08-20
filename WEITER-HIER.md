@@ -44,8 +44,20 @@ Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
   im Hintergrund starten und `http://localhost:4173` öffnen).
 - **Domain quartier261.de ist noch frei** (geprüft, nicht registriert). Kann bei Bedarf später
   gekauft und vor die kostenlose GitHub-Adresse geschaltet werden — bisher nicht gemacht.
+- **Kontaktformular "Individuelle Anfrage"** (Name, E-Mail, Nachricht) im Buchungsbereich, für
+  Gäste mit Sonderwünschen (z. B. längere Aufenthalte). Verschickt die Nachricht über den
+  kostenlosen Dienst FormSubmit.co direkt an quartier261@gmx.de, ohne dass der Gast eine
+  eigene E-Mail-App braucht. ⚠️ **Wichtig:** Beim allerersten echten Absenden auf der Live-Seite
+  schickt FormSubmit eine Bestätigungs-Mail an quartier261@gmx.de — die muss einmal bestätigt
+  werden, sonst kommen weitere Anfragen nicht an. Am besten das Formular einmal selbst live
+  testen.
+- `datenschutz.html` — neue Pflichtseite (Datenschutzerklärung), nötig geworden durch das
+  Kontaktformular (Daten laufen kurz über FormSubmit, Server in den USA). Verlinkt im Footer
+  und im Impressum. Deckt Kontaktformular, Smoobu-Widget und GitHub-Pages-Hosting ab — ein
+  guter Standardtext, aber keine anwaltlich geprüfte Rechtsberatung.
 
 ## Nächster Schritt
-Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung). Als Nächstes:
-eigene Domain (quartier261.de) registrieren und einrichten, damit die Seite unter einer
-schöneren Adresse statt der kostenlosen GitHub-Adresse erreichbar ist.
+Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung + Kontaktformular).
+Offen: 1) das Kontaktformular einmal live testen und die FormSubmit-Bestätigungsmail
+bestätigen, 2) eigene Domain (quartier261.de) registrieren und einrichten, damit die Seite
+unter einer schöneren Adresse statt der kostenlosen GitHub-Adresse erreichbar ist.
