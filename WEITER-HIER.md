@@ -47,11 +47,12 @@ Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
   „www"), GitHub kennt die Domain (`CNAME`-Datei im Repo, per `gh api ... PATCH .../pages`
   gesetzt). **Funktioniert bereits über `http://quartier261.de`** (mobil getestet, funktioniert;
   am Heimnetz des Nutzers zog die DNS-Änderung zunächst noch nicht, das ist normal/Wartezeit).
-  ⚠️ **Offen:** Das automatische HTTPS-Zertifikat von GitHub für die eigene Domain war am
-  Sitzungsende noch nicht fertig ausgestellt (`https_enforced: false` in der Pages-API, Zertifikat
-  zeigte noch `*.github.io` statt `quartier261.de`) — normalerweise braucht das nur ein paar
-  Stunden. Kurz mit `gh api repos/Quartier261/ferienwohnung-website/pages` prüfen, ob
-  `https_enforced` inzwischen `true` werden kann.
+  ✅ **HTTPS-Zertifikat ist jetzt aktiv** (Stand 2026-09-03): Das automatische Zertifikat für
+  `quartier261.de` hing wochenlang fest, obwohl die DNS-Einstellungen korrekt waren (bekannter
+  GitHub-Fehler). Der Fix: Domain in den GitHub-Pages-Einstellungen kurz entfernt und sofort
+  wieder eingetragen — das hat eine frische Zertifikatsanfrage ausgelöst. `https_enforced` ist
+  jetzt `true`, die Seite läuft unter `https://quartier261.de` mit einem eigenen Zertifikat
+  (gültig bis 2026-12-02, erneuert sich automatisch).
 - **QR-Code für die Domain** liegt in `ergebnisse/qr-code-quartier261.png` (zeigt auf
   `https://quartier261.de`, erzeugt mit `qrencode`), z. B. zum Ausdrucken für die Wohnung.
 - **Kontaktformular "Individuelle Anfrage"** (Name, E-Mail, Nachricht) im Buchungsbereich, für
@@ -67,9 +68,8 @@ Git-Sicherheitsnetz steht. Projekt war ursprünglich in drei Etappen zerlegt:
   guter Standardtext, aber keine anwaltlich geprüfte Rechtsberatung.
 
 ## Nächster Schritt
-Die Website ist inhaltlich und funktional fertig (Infos + echte Buchung + Kontaktformular +
-eigene Domain). Offen: 1) prüfen, ob das HTTPS-Zertifikat für quartier261.de inzwischen fertig
-ist (und danach „HTTPS erzwingen" aktivieren), 2) das Kontaktformular einmal live testen und
+Die Website ist inhaltlich, funktional und technisch fertig (Infos + echte Buchung +
+Kontaktformular + eigene Domain + HTTPS). Offen: das Kontaktformular einmal live testen und
 die FormSubmit-Bestätigungsmail bestätigen.
 
 **Neue Idee für eine künftige Sitzung (noch nicht begonnen):** Ein Rechnungsprogramm, mit dem
